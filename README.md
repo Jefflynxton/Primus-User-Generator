@@ -1,4 +1,4 @@
-# Pharos Testnet Username Generator for Primus
+# Primus Testnet Username Generator for Pharos Testnet
 
 This Python script helps you generate multiple batches of realistic X (formerly Twitter) usernames formatted for mass token sending on the **Pharos testnet (Primus)**. It outputs `.xlsx` files containing randomized usernames, pre-filled platform and amount values, and includes a descriptive header as required.
 
@@ -26,7 +26,7 @@ Each generated file includes:
 
 ### 1. Clone or Download
 ```bash
-git clone https://github.com/your-username/pharos-username-generator.git
+git clone https://github.com/jefflynxton/pharos-username-generator.git
 cd pharos-username-generator
 ```
 
