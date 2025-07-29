@@ -26,8 +26,7 @@ Each generated file includes:
 
 ### 1. Clone or Download
 ```bash
-git clone https://github.com/jefflynxton/pharos-username-generator.git
-cd pharos-username-generator
+https://github.com/Jefflynxton/Primus-User-Generator.git
 ```
 
 ### 2. Install Required Libraries
