@@ -26,7 +26,8 @@ Each generated file includes:
 
 ### 1. Clone or Download
 ```bash
-https://github.com/Jefflynxton/Primus-User-Generator.git
+git clone https://github.com/Jefflynxton/Primus-User-Generator.git
+cd Primus-User-Generato
 ```
 
 ### 2. Install Required Libraries
