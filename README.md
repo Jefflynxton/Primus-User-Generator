@@ -37,15 +37,9 @@ Make sure Python is installed, then run:
 pip install pandas openpyxl numpy
 ```
 
-Or use the `requirements.txt` file:
-
-```bash
-pip install -r requirements.txt
-```
-
 ### 3. Run the Script
 ```bash
-python generate_usernames.py
+python usernames.py
 ```
 This will generate files like:
 ```
