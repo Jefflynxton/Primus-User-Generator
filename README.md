@@ -1,77 +1,112 @@
-# 🛠 Primus Username Generator for Pharos Testnet
+# Pharos Testnet Username Generator for Primus
 
-This Python script generates realistic-looking usernames (e.g., `@jepht_92`, `@bliss_`, `@uche13`) and saves them in Excel files — perfect for tasks on the **Pharos Testnet** running on the **Primus Chain**.
-
-Whether you're mass-testing wallet addresses, organizing community participants, or just need human-style handles for testnet automation, this tool helps you get it done in seconds.
+This Python script helps you generate multiple batches of realistic X (formerly Twitter) usernames formatted for mass token sending on the **Pharos testnet (Primus)**. It outputs `.xlsx` files containing randomized usernames, pre-filled platform and amount values, and includes a descriptive header as required.
 
 ---
 
-## ⚡ Features
-
-* ✅ Generates **10 Excel files**, each with **200 unique usernames**
-* ✅ Adds a **descriptive row and custom headers**
-* ✅ Usernames are realistic (name-like, with optional `_` and numbers)
-* ✅ Clean filenames like `user_batch_1.xlsx`, `user_batch_2.xlsx`, etc.
-* ✅ Perfect for Pharos/Primus testnet tasks
-
-## 📦 Output Example
-
-Each generated Excel file looks like this:
-
----<img width="786" height="225" alt="Screenshot From 2025-07-29 15-57-02" src="https://github.com/user-attachments/assets/4b0545ca-607a-4d54-adb4-bd6339be856d" />
-
+## ✨ Features
+- Generates **10 Excel files** each with **200 unique usernames**
+- Realistic username format, e.g., `@jeph_27`, `@zino88`, `@susan01`
+- Follows the exact XLSX format required by the Pharos Primus testnet sender
+- Fully customizable and beginner-friendly
 
 ---
 
-## 🚀 How to Use
+## 📂 Output Format
+Each generated file includes:
+- A descriptive message row
+- A column header row: `Receivers | Platform | Send Amount`
+- 200 rows of formatted data (usernames, platform=X, amount=0.0001)
+ ---<img width="786" height="225" alt="Screenshot From 2025-07-29 15-57-02" src="https://github.com/user-attachments/assets/4b0545ca-607a-4d54-adb4-bd6339be856d" />
+  
 
-### 1. Clone or Download This Repo
+---
 
-```
-git clone https://github.com/YOUR_USERNAME/pharos-username-generator.git
+## 🛠 Installation & Usage
+
+### 1. Clone or Download
+```bash
+git clone https://github.com/your-username/pharos-username-generator.git
 cd pharos-username-generator
 ```
 
 ### 2. Install Required Libraries
-
 Make sure Python is installed, then run:
+
+```bash
+pip install pandas openpyxl numpy
+```
+
+Or use the `requirements.txt` file:
 
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 3. Run the Script
-
-```
+```bash
 python generate_usernames.py
 ```
+This will generate files like:
+```
+user_batch_1.xlsx
+user_batch_2.xlsx
+...
+user_batch_10.xlsx
+```
 
-This will generate:
+---
 
-     user_batch_1.xlsx
-     user_batch_2.xlsx
-      ...
-     user_batch_10.xlsx
-     
-### Each file will contain 200 human-style usernames formatted for use with the Pharos testnet.
+## ⚠️ Linux Users – Python Package Error Fix
+If you're seeing this error:
+
+```
+error: externally-managed-environment
+```
+It’s due to new restrictions on global pip installs (PEP 668).
+
+### ✅ Recommended Fix: Use a Virtual Environment
+```bash
+python3 -m venv myenv
+source myenv/bin/activate
+pip install -r requirements.txt
+```
+
+### ✅ Other Options:
+- **Use pipx** (for CLI apps):
+  ```bash
+  sudo apt install pipx
+  pipx install pandas openpyxl numpy
+  ```
+- **Allow pip to override (not recommended):**
+  ```bash
+  pip install --break-system-packages pandas openpyxl numpy
+  ```
+- **Or use apt (if available):**
+  ```bash
+  sudo apt install python3-pandas python3-numpy
+  ```
+
+🧠 **Tip:** Stick with virtual environments for safe package management.
+
+---
+
+## 📜 License
+MIT License. Feel free to use, modify, and share.
+
+## 🤝 Contributing
+Pull requests are welcome! If you spot a bug or have suggestions, open an issue or submit a PR.
+
+## 📣 Connect with the Author
+Follow [@0jeph](https://x.com/0jeph) on X for more updates, testnet tools, and alpha.
+
+---
+
+## 🚨 Disclaimer
+This script is provided for educational and testing purposes on the **Pharos/Primus testnet**. Do not use it for spamming or malicious automation. The author is not responsible for how you use the tool.
+
+---
+
+Happy testing and good luck farming! 🚀
 
 
-🧾 License
-This project is licensed under the MIT License, which allows you to use, modify, and distribute it freely.
-
-⚠️ Disclaimer
-This script is provided as-is for educational and testnet-related purposes.
-The generated usernames are fictional and not tied to any real users.
-Always review and comply with the guidelines of the Pharos or Primus testnet before mass usage.
-
-The author is not responsible for misuse or unintended consequences.
-
-🙌 Stay Connected
-If this tool helped you, please consider giving the repo a ⭐ and following me on X (Twitter):
-
-🔗 https://x.com/0jeph
-
-
-I share crypto tools, automation tips, and open-source utilities.
-
-Thank you for supporting open-source testnet tools!
