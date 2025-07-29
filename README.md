@@ -38,6 +38,7 @@ Make sure Python is installed, then run:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Run the Script
 
