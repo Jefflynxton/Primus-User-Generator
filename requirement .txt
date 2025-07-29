@@ -1,0 +1,9 @@
+
+---
+
+### ✅ Final `requirements.txt`:
+
+```txt
+pandas
+openpyxl
+numpy
