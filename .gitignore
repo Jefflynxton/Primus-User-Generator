@@ -22,11 +22,3 @@ env/
 
 # Windows
 Thumbs.db
-```
-
-## 📦 requirements.txt
-```
-pandas
-openpyxl
-numpy
-```
