@@ -1,4 +1,4 @@
-# 🛠 Primus Username Generator for Primus Testnet
+# 🛠 Primus Username Generator for Pharos Testnet
 
 This Python script generates realistic-looking usernames (e.g., `@jepht_92`, `@bliss_`, `@uche13`) and saves them in Excel files — perfect for tasks on the **Pharos Testnet** running on the **Primus Chain**.
 
